@@ -86,6 +86,9 @@ class Page extends React.Component {
     const node_env = process.env.NODE_ENV;
     return { node_env };
   }
+  componentDidMount() {
+    console.log(this.props.pageData.name)
+  }
   render() {
     const componentStatus = this.props.pageData.status || "Contribution";
     return (
